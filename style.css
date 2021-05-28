@@ -1,4 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@-webkit-keyframes shake {
+  0% {
+    left: 0;
+  }
+  1% {
+    left: -3px;
+  }
+  2% {
+    left: 5px;
+  }
+  3% {
+    left: -8px;
+  }
+  4% {
+    left: 8px;
+  }
+  5% {
+    left: -5px;
+  }
+  6% {
+    left: 3px;
+  }
+  7% {
+    left: 0;
+  }
+}
+@keyframes shake {
+  0% {
+    left: 0;
+  }
+  1% {
+    left: -3px;
+  }
+  2% {
+    left: 5px;
+  }
+  3% {
+    left: -8px;
+  }
+  4% {
+    left: 8px;
+  }
+  5% {
+    left: -5px;
+  }
+  6% {
+    left: 3px;
+  }
+  7% {
+    left: 0;
+  }
+}
+
 :root {
   --header-height: 3rem;
   --first-color: #da2535;
@@ -266,6 +319,18 @@ img {
   border-radius: 0.5rem 0 0.5rem 0;
 }
 
+.button--contact {
+  position: relative;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
 .about__data {
   text-align: center;
 }
@@ -309,5 +374,9 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: var(--mb-1);
+}
+
+.contact__container {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

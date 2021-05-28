@@ -1,5 +1,32 @@
 // GOOGLE FONTS
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+// ANIMATION BUTTON SHAKE
+@keyframes shake {
+    0% {
+        left: 0;
+    }
+    1% {
+        left: -3px;
+    }
+    2% {
+        left: 5px;
+    }
+    3% {
+        left: -8px;
+    }
+    4% {
+        left: 8px;
+    }
+    5% {
+        left: -5px;
+    }
+    6% {
+        left: 3px;
+    }
+    7% {
+        left: 0;
+    }
+}
 
 :root {
     --header-height: 3rem;
@@ -246,6 +273,13 @@ img {
         padding: 0.625rem 0.813rem;
         border-radius: 0.5rem 0 0.5rem 0;
     }
+    &--contact {
+        position: relative;
+        animation-name: shake;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
 }
 
 // ABOUT
@@ -281,5 +315,12 @@ img {
         width: 200px;
         align-self: center;
         margin-bottom: var(--mb-1);
+    }
+}
+
+// CONTACT
+.contact {
+    &__container {
+        text-align: center;
     }
 }
