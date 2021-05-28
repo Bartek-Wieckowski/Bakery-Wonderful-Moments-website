@@ -369,3 +369,35 @@ img {
         margin-top: var(--mb-3);
     }
 }
+
+// MEDIA QUERIES
+
+// for medium
+@media screen and (min-width: 568px) {
+}
+.home__container,
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.about__data {
+    text-align: initial;
+}
+.about__img {
+    width: 380px;
+}
+.products__container {
+    margin-top: var(--mb-6);
+}
+
+@media screen and (min-width: 768px) {
+}
+
+// for large
+
+@media screen and (min-width: 960px) {
+    .basic-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
