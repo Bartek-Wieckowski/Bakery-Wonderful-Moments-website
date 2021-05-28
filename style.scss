@@ -238,3 +238,15 @@ img {
         color: var(--title-color);
     }
 }
+
+// ABOUT
+.about {
+    &__data {
+        text-align: center;
+    }
+    &__img {
+        margin-bottom: var(--mb-4);
+        width: 280px;
+        justify-self: center;
+    }
+}
