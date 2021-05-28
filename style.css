@@ -61,7 +61,7 @@
   --text-color: #5b5757;
   --text-color-light: #8f8a8a;
   --body-color: #fefbfb;
-  --container-color: #fff;
+  --dark-color: #000;
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -237,7 +237,7 @@ img {
 }
 
 .nav__link:hover, .nav__logo:hover {
-  color: var(--title-color);
+  color: var(--dark-color);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -348,8 +348,8 @@ img {
           animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .button--icon {
@@ -426,7 +426,7 @@ img {
 
 .footer__social {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--dark-color);
   margin-right: var(--mb-2);
 }
 
@@ -441,7 +441,7 @@ img {
 
 .footer__link {
   display: inline-block;
-  color: var(--title-color);
+  color: var(--dark-color);
   margin-bottom: var(--mb-2);
 }
 

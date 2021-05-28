@@ -28,11 +28,18 @@ themeBtn.addEventListener("click", () => {
     document.documentElement.style.setProperty("--body-color", "#fefbfb");
     document.documentElement.style.setProperty("--text-color", "#5b5757");
     document.documentElement.style.setProperty("--title-color", "#161212");
+    document.documentElement.style.setProperty("--first-color-send", "#de3b49");
+    document.documentElement.style.setProperty("--first-color-alt", "#c42130");
+    document.documentElement.style.setProperty("--dark-color", "#000");
     isDark = false;
   } else {
     document.documentElement.style.setProperty("--body-color", "#161212");
     document.documentElement.style.setProperty("--text-color", "#fefbfb");
     document.documentElement.style.setProperty("--title-color", "#de3b49");
+    document.documentElement.style.setProperty("--first-color-send", "#fff");
+    document.documentElement.style.setProperty("--first-color-alt", "#fff");
+    document.documentElement.style.setProperty("--dark-color", "#fff");
+
     isDark = true;
   }
 });

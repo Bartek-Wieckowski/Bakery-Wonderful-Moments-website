@@ -39,7 +39,7 @@
     --text-color: #5b5757;
     --text-color-light: #8f8a8a;
     --body-color: #fefbfb;
-    --container-color: #fff;
+    --dark-color: #000;
 
     //font and typography
 
@@ -203,7 +203,7 @@ img {
         color: var(--body-color);
         font-weight: var(--font-semi-bold);
         &:hover {
-            color: var(--title-color);
+            color: var(--dark-color);
             transition: 0.3s;
         }
     }
@@ -295,7 +295,7 @@ img {
         animation-name: shake;
         animation-duration: 7s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease;
     }
     &--icon {
         font-size: 1.5rem;
@@ -364,7 +364,7 @@ img {
 
     &__social {
         font-size: 1.5rem;
-        color: var(--title-color);
+        color: var(--dark-color);
         margin-right: var(--mb-2);
         &:hover {
             color: var(--first-color);
@@ -376,7 +376,7 @@ img {
     }
     &__link {
         display: inline-block;
-        color: var(--title-color);
+        color: var(--dark-color);
         margin-bottom: var(--mb-2);
         &:hover {
             color: var(--first-color);
