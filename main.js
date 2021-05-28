@@ -16,3 +16,27 @@ const linkAction = function () {
   toggle.classList.remove("toggleX");
 };
 allLinks.forEach((n) => n.addEventListener("click", linkAction));
+
+// DARK/LIGHT MODE
+let isDark = false;
+const themeBtn = document.getElementById("theme-button");
+const iconTheme = "bx-sun";
+
+themeBtn.addEventListener("click", () => {
+  themeBtn.classList.toggle(iconTheme);
+  if (isDark == true) {
+    document.documentElement.style.setProperty("--body-color", "#fefbfb");
+    document.documentElement.style.setProperty("--text-color", "#5b5757");
+    document.documentElement.style.setProperty("--title-color", "#161212");
+    isDark = false;
+  } else {
+    document.documentElement.style.setProperty("--body-color", "#161212");
+    document.documentElement.style.setProperty("--text-color", "#fefbfb");
+    document.documentElement.style.setProperty("--title-color", "#de3b49");
+    isDark = true;
+  }
+});
+
+// SCROLL TOP ICON
+
+// scroll reveal i readme
