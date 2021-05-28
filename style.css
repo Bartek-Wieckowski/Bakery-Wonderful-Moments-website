@@ -140,6 +140,15 @@ img {
   display: block;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .section {
   padding: 2rem 0 4rem;
 }
@@ -378,5 +387,46 @@ img {
 
 .contact__container {
   text-align: center;
+}
+
+.footer__container {
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  row-gap: 2rem;
+}
+
+.footer__logo {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+}
+
+.footer__social {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-right: var(--mb-2);
+}
+
+.footer__social:hover {
+  color: var(--first-color);
+}
+
+.footer__title {
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+}
+
+.footer__link {
+  display: inline-block;
+  color: var(--title-color);
+  margin-bottom: var(--mb-2);
+}
+
+.footer__link:hover {
+  color: var(--first-color);
+}
+
+.footer .socials {
+  margin-top: var(--mb-3);
 }
 /*# sourceMappingURL=style.css.map */
