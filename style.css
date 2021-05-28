@@ -310,6 +310,42 @@ img {
       justify-self: center;
 }
 
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  padding: 0.3rem;
+  background: var(--first-color-send);
+  border-radius: 0.4rem;
+  z-index: 10;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll-top:hover {
+  background: var(--first-color-alt);
+}
+
+.scroll-top__icon {
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
