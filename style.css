@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @-webkit-keyframes shake {
   0% {
     left: 0;
@@ -62,7 +62,7 @@
   --text-color-light: #8f8a8a;
   --body-color: #fefbfb;
   --container-color: #fff;
-  --body-font: "Open Sans", sans-serif;
+  --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -161,8 +161,8 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-6);
 }
 
 .section__title,
@@ -510,6 +510,16 @@ img {
   }
   .products__img {
     width: 400px;
+  }
+  .about__description {
+    line-height: 2;
+  }
+  .contact {
+    min-height: 500px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
