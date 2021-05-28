@@ -56,4 +56,25 @@ const scrollTop = function () {
 };
 window.addEventListener("scroll", scrollTop);
 
-// scroll reveal i readme
+// SCROLL REVEAL ANIMATION
+
+const sr = ScrollReveal({
+  duration: 2500,
+  reset: true,
+});
+// data
+sr.reveal(".home__data", { origin: "left", distance: "70px", delay: 500 });
+
+// imgs
+sr.reveal(".home__img, .about__img", {
+  origin: "top",
+  distance: "90px",
+  delay: 200,
+});
+
+// products content
+sr.reveal(".products__content", {
+  origin: "bottom",
+  distance: "190px",
+  delay: 400,
+});
