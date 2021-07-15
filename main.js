@@ -57,7 +57,6 @@ const scrollTop = function () {
 window.addEventListener("scroll", scrollTop);
 
 // SCROLL REVEAL ANIMATION
-
 const sr = ScrollReveal({
   duration: 2500,
   reset: true,
